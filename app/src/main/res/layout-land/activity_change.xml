@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeScroll"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="550sp"
+            android:layout_height="550sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_round"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_activity_change"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:background="@drawable/border_bottom"
+                android:layout_marginTop="15dp"
+                android:textColor="#008CFF"
+                android:textSize="28sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/titleText"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="100sp"
+                android:id="@+id/nameLayout"
+                android:layout_marginBottom="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/change_name"
+                    android:id="@+id/nameText"
+                    android:layout_marginRight="10sp"
+                    android:textIsSelectable="false"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cButtonChoose"
+                    android:textSize="18sp"
+                    android:text="@string/change_choose_name"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountLayout"
+                android:layout_below="@+id/nameLayout"
+                android:layout_marginLeft="39sp"
+                android:layout_marginBottom="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/change_amount"
+                    android:id="@+id/amountText"
+                    android:layout_marginRight="10sp"
+                    android:textIsSelectable="false"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cButtonAmount"
+                    android:textSize="18sp"
+                    android:text="@string/change_choose_amount"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dayLayout"
+                android:layout_below="@+id/amountLayout"
+                android:layout_marginBottom="15sp"
+                android:layout_marginRight="2sp"
+                android:layout_marginLeft="96sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/change_day"
+                    android:id="@+id/dayText"
+                    android:layout_marginRight="10sp"
+                    android:textIsSelectable="false"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cButtonDays"
+                    android:textSize="18sp"
+                    android:text="@string/change_choose_days"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timeLayout"
+                android:layout_below="@+id/dayLayout"
+                android:layout_alignLeft="@+id/dayLayout"
+                android:layout_alignStart="@+id/dayLayout"
+                android:layout_marginLeft="26sp"
+                android:layout_marginBottom="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/change_time"
+                    android:id="@+id/timeText"
+                    android:layout_marginRight="10sp"
+                    android:textIsSelectable="false"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cButtonTime"
+                    android:textSize="18sp"
+                    android:text="@string/change_choose_time"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/endDateLayout"
+                android:layout_below="@+id/startDateLayout"
+                android:layout_alignLeft="@+id/amountLayout"
+                android:layout_alignStart="@+id/amountLayout"
+                android:layout_marginLeft="8sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/change_end_date"
+                    android:id="@+id/endDateText"
+                    android:layout_marginRight="10sp"
+                    android:textIsSelectable="false"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cButtonEndDate"
+                    android:textSize="18sp"
+                    android:text="@string/change_choose_date"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cButtonReset"
+                    android:textSize="18sp"
+                    android:text="@string/change_reset_date"
+                    android:layout_marginLeft="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startDateLayout"
+                android:layout_below="@+id/timeLayout"
+                android:layout_alignLeft="@+id/amountLayout"
+                android:layout_alignStart="@+id/amountLayout"
+                android:layout_marginLeft="4sp"
+                android:layout_marginBottom="15sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/change_start_date"
+                    android:id="@+id/startDateText"
+                    android:layout_marginRight="10sp"
+                    android:textIsSelectable="false"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cButtonStartDate"
+                    android:textSize="18sp"
+                    android:text="@string/change_choose_date"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_submit"
+        android:id="@+id/buttonSubmitChange"
+        android:background="@drawable/button_add_change_dim"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:layout_alignBottom="@+id/changeScroll"
+        android:layout_alignRight="@+id/changeScroll"
+        android:layout_alignEnd="@+id/changeScroll"
+        android:layout_marginEnd="50sp"
+        android:layout_marginBottom="35sp"/>
+
+</RelativeLayout>

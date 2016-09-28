@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Medicijnen App</string>
+    <string name="base_package">nl.rijnijssel.medicijnenapp</string>
+
+    <string name="sender_id">705500949966</string>
+
+    <string name="alert_title">Foutmelding</string>
+
+    <!--<string name="base_url">http://192.168.192.69/android</string>-->
+    <string name="base_url">http://89.98.199.32:8080/android</string>
+    <string name="ins_url">%1$s/insert.php</string>
+    <string name="get_url">%1$s/get.php</string>
+    <string name="login_url">%1$s/and_login.php</string>
+    <string name="register_url">%1$s/gcm_register.php</string>
+    <string name="unregister_url">%1$s/gcm_unregister.php</string>
+    <string name="meds_url">%1$s/med_info.php</string>
+    <string name="use_insert_url">%1$s/insert_use.php</string>
+    <string name="use_update_url">%1$s/update_use.php</string>
+    <string name="use_get_url">%1$s/get_use.php</string>
+    <string name="use_delete_url">%1$s/delete_use.php</string>
+
+    <string name="ins_success">Gelukt</string>
+    <string name="get_success">response</string>
+    <string name="login_success">login</string>
+    <string name="register_success">Registratie Gelukt</string>
+    <string name="register_failed">failed</string>
+    <string name="conn_failed">Verbinding Mislukt</string>
+
+    <string name="play_services_not_supported">Dit apparaat is niet ondersteund.</string>
+    <string name="play_services_not_installed">Google Play Services moet geïnstalleerd zijn.</string>
+
+    <string name="preference_name">MedicijnenAppPrefs</string>
+    <string name="preference_registration_id">REGISTRATION_ID</string>
+    <string name="preference_token_sent">SENT_TOKEN_TO_SERVER</string>
+    <string name="preference_patient_id">PATIENT_ID</string>
+    <string name="preference_patient_name">PATIENT_NAME</string>
+
+    <string name="broadcast_registration_complete">REGISTRATION_COMPLETE</string>
+
+    <string name="title_activity_login">Inloggen</string>
+    <string name="prompt_username">Gebruikersnaam</string>
+    <string name="prompt_password">Wachtwoord</string>
+    <string name="action_sign_in">Inloggen</string>
+    <string name="action_sign_in_short">Inloggen</string>
+    <string name="error_invalid_username_password">Gebruikersnaam of wachtwoord is ongeldig</string>
+
+    <string name="title_activity_change">Medicatie - Aanpassen</string>
+    <string name="change_name">Naam: </string>
+    <string name="change_choose_name">Kies medicijn</string>
+    <string name="change_choose_amount">Kies hoeveelheid</string>
+    <string name="change_choose_days">Kies dagen</string>
+    <string name="change_search_hint">Zoeken</string>
+    <string name="change_choose_title">Kiezen</string>
+    <string name="change_choose_cancel">Annuleren</string>
+    <string name="change_choose_try_again">Opnieuw proberen</string>
+    <string name="change_choose_ok">OK</string>
+    <string name="change_amount">Hoeveelheid: </string>
+    <string name="change_day">Dagen: </string>
+    <string name="change_time">Tijd: </string>
+    <string name="change_choose_time">Kies Tijd</string>
+    <string name="change_start_date">Start datum: </string>
+    <string name="change_end_date">Eind datum: </string>
+    <string name="change_choose_date">Kies datum</string>
+    <string name="change_reset_date">Reset</string>
+    <string name="change_submit">Aanpassen</string>
+
+    <string name="title_activity_add">Medicatie - Toevoegen</string>
+    <string name="add_submit">Toevoegen</string>
+</resources>

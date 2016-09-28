@@ -1,0 +1,15 @@
+opdrachtgever eerst meer gekeken naar mogelijkheden, nu wat verder gekeken.
+dropdown list aparte tabel medicijnen wordt veel te groot in de app
+eventueel directe input naam medicatie in de app
+nieuwe medicatie alleen via de thuiszorg
+als medicatie uit de lijst wordt verwijderd dan moet dat rekening houden met mensen die op dit moment die medicatie gebruiken
+
+technisch ontwerp:
+extra dingen uit ander project uit het ontwerp halen
+
+voorzetsels in een aparte column
+database aanpassen om verder te normalizeren door middel van meer details bijv. geboortedatum, woonplaats enz.
+rik besluiten wat de slimste manier is om medicijnen te kiezen uit de lijst
+bijsluiter medicijnen in app later in het project besluiten hoe dat word weergeven
+ringtone alarm systeem standaard (en luid)
+website push bericht -> app haalt informatie op uit de database gebaseerd op het push bericht

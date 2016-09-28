@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginProgress"
+        android:layout_above="@+id/loginScroll"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginScroll"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="400sp"
+            android:layout_height="400sp"
+            android:background="@drawable/border_round"
+            android:padding="32sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/action_sign_in"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="32sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUserName"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/user"
+                android:hint="@string/prompt_username"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:singleLine="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:drawableLeft="@drawable/password"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_sign_in"
+                android:id="@+id/buttonLogin"
+                android:background="@drawable/button_login_dim"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="80sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

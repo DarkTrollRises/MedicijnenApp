@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2"
+        android:background="@drawable/border_right"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:id="@+id/relativeLayout"
+            android:background="@drawable/border_bottom_right">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Hallo Piet"
+                android:id="@+id/textViewName"
+                android:layout_toLeftOf="@+id/buttonLogout"
+                android:gravity="center_vertical"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="12sp"
+                android:background="@drawable/border_right"
+                android:layout_marginBottom="3px"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonLogout"
+                android:src="@drawable/logout"
+                android:contentDescription="Logout Button"
+                android:background="@null"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8sp"
+                android:layout_marginLeft="8sp"
+                android:layout_marginRight="5sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:id="@+id/imageViewMedicine"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="Image of the medicine"
+            android:src="@drawable/no_image"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="125sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewMedInfo"
+            android:layout_below="@+id/imageViewMedicine"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="12sp"
+            android:background="@drawable/border_info"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textViewMedInfo"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bijsluiter"
+                    android:id="@+id/buttonInfo"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/button_info_dim"
+                    android:layout_marginLeft="24sp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:enabled="false" android:layout_marginTop="20sp"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aanpassen\nMedicijn"
+                    android:id="@+id/buttonChange"
+                    android:background="@drawable/button_change_dim"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:layout_alignTop="@+id/buttonInfo"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="24sp"
+                    android:enabled="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toevoegen\nMedicijn"
+                android:id="@+id/buttonAdd"
+                android:background="@drawable/button_add"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/buttonInfo"
+                android:layout_alignStart="@+id/buttonInfo"
+                android:layout_marginBottom="28sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verwijderen\nMedicijn"
+                android:id="@+id/buttonDelete"
+                android:background="@drawable/button_delete_dim"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/buttonChange"
+                android:layout_alignStart="@+id/buttonChange"
+                android:layout_marginBottom="28sp"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/relativeLayout2"
+        android:layout_toEndOf="@+id/relativeLayout2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:id="@+id/linearLayout"
+            android:weightSum="10"
+            android:background="@drawable/border_bottom">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="100sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textDate"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:textSize="38sp"
+                android:layout_weight="8"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonRefresh"
+                android:layout_weight="2"
+                android:src="@drawable/refresh"
+                android:background="@drawable/border_left"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:layout_marginBottom="1sp"/>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvMedicine"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:divider="#ADADAD"
+            android:dividerHeight="2px"
+            android:listSelector="#BDBDBD"
+            android:choiceMode="singleChoice"
+            android:layout_below="@+id/linearLayout"/>
+
+    </RelativeLayout>
+</RelativeLayout>
